@@ -1,0 +1,48 @@
+#!bash
+
+# catch first arguments with $1
+case "$1" in
+  build)
+	case "$2" in
+	  system)
+	  sudo nixos-rebuild switch --flake /home/adi/.dotfiles/.config/nix#hermes
+  	  ;;
+  	  home)
+	  home-manager switch --flake /home/adi/.dotfiles/.config/nix#adi@hermes
+  	  ;;
+  	  dotfiles)
+	  cd /home/adi/.dotfiles && stow .
+  	  ;;
+  	  help)
+	  echo "system"
+	  echo "home"
+	  echo "dotfiles"
+  	  ;;
+	esac
+  ;;
+  sync)
+	case "$2" in
+	  dotfiles)
+	  cd /home/adi/.dotfiles
+	  git add .
+	  git commit -m "thor-auto-commit"
+	  git push origin master
+  	  ;;
+  	  projects)
+	  home-manager switch --flake /home/adi/.dotfiles/.config/nix#adi@hermes
+  	  ;;
+  	  music)
+	  cd /home/adi/.dotfiles && stow .
+  	  ;;
+  	  help)
+	  echo "music"
+	  echo "projects"
+	  echo "dotfiles"
+  	  ;;
+	esac
+  ;;
+  help)
+  echo "build"
+  echo "sync"
+  ;;
+esac

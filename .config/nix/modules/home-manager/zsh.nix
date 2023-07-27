@@ -8,7 +8,10 @@
     enableAutosuggestions = true;
     enableCompletion = true;
     dotDir = ".config/zsh";
-    initExtra = ''eval "$(starship init zsh)"'';
+    initExtra = ''
+              eval "$(starship init zsh)"
+              export PATH=/home/adi/.dotfiles/.config/thor:$PATH
+              '';
     
     shellAliases = {
       ll = "ls -l";
