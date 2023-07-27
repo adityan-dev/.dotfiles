@@ -29,9 +29,10 @@
     image-roll
     feh
     mpv
-    mpd
     btop
     gvfs
     pamixer
+    unison
+    rhythmbox
   ];
 }

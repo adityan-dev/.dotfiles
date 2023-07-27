@@ -29,10 +29,24 @@ case "$1" in
 	  git push origin master
   	  ;;
   	  projects)
-	  home-manager switch --flake /home/adi/.dotfiles/.config/nix#adi@hermes
+		case "$3" in
+	 	 in)
+		 unison /media/data/Study/Projects /home/adi/Projects
+	  	 ;;
+  	 	 out)
+		 unison /home/adi/Projects /media/data/Study/Projects
+  	  	 ;;
+	        esac
   	  ;;
   	  music)
-	  cd /home/adi/.dotfiles && stow .
+		case "$3" in
+	 	 in)
+		 unison /media/data/Songs /home/adi/Music
+	  	 ;;
+  	 	 out)
+		 unison /home/adi/Music /media/data/Songs
+  	  	 ;;
+	        esac
   	  ;;
   	  help)
 	  echo "music"
