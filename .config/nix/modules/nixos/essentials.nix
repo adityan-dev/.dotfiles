@@ -1,38 +1,57 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    # Core
+    brightnessctl
+    neovim
+    firefox-wayland
+    kitty
+    swaynotificationcenter
+    zsh
+    starship
     git
     wget
     curl
     ripgrep
     busybox
-    zsh
-    starship
-    playerctl
-    brightnessctl
-    unzip
-    unrar
-    mtpfs
-    stow
-    home-manager
-    neovim
-    firefox-wayland
-    gparted
-    kitty
-    xfce.thunar
-    xfce.thunar-archive-plugin
-    swaynotificationcenter
-    neofetch
+
+    # UI
     wofi
     waybar 
     wlogout
+    neofetch
+
+    # Media
+    mpv
     image-roll
     feh
-    mpv
+    ffmpeg
+
+    # System Managers
     btop
+    stow
+    home-manager
+
+    # Files and Folders
     gvfs
-    pamixer
     unison
+    xfce.thunar
+    xfce.thunar-archive-plugin
+    gparted
+    unzip
+    unrar
+    mtpfs
+
+    # Audio
     rhythmbox
+    pamixer
+    playerctl
+
+    # LSP
+    libllvm
+    rust-analyzer
+    nodePackages.pyright
+    fortls
+    rnix-lsp
   ];
 }

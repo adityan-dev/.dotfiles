@@ -13,12 +13,12 @@
   (load bootstrap-file nil 'nomessage))
 
 (straight-use-package 'use-package)
-(setq straight-use-package-by-default t)
+(setq straight-use-package-by-default nil)
 (eval-when-compile
   (eval-after-load 'advice
     `(setq ad-redefinition-action 'accept))
-  (setq use-package-verbose nil
-        use-package-compute-statistics nil
+  (setq use-package-verbose t
+        use-package-compute-statistics t
         ;;use-package-ignore-unknown-keywords t
         use-package-minimum-reported-time 0.01
         ;; use-package-expand-minimally t
