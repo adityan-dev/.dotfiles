@@ -1,6 +1,7 @@
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
 (use-package general
+  :straight t
   :demand t
    :commands (general-def general-define-key)
    :init
@@ -76,10 +77,10 @@
 
 (push (concat user-emacs-directory "packages/straight/build") load-path)
 
-(load "general/general")
+;;(load "general/general")
 (require 'general)
 
-(load "evil/evil")
+;;(load "evil/evil")
 (require 'evil)
 
 (general-def

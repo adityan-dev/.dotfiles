@@ -48,10 +48,21 @@
     playerctl
 
     # LSP
-    libllvm
     rust-analyzer
     nodePackages.pyright
     fortls
     rnix-lsp
+    cmake-language-server
+    ccls
+
+    # Libs
+    gcc
+    gfortran
+    #libllvm
+    clang
+    clang-tools
+    libcxx
+    rustc
+    cargo
   ];
 }

@@ -1,4 +1,5 @@
 (use-package which-key
+  :straight t
   :ensure t
   :init (which-key-mode)
   :diminish which-key-mode

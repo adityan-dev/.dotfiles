@@ -8,6 +8,7 @@
     (force-mode-line-update)))
 
 (use-package doom-modeline
+  :straight t
   :init (doom-modeline-mode 1)
   :config
   (setq doom-modeline-persp-name t)

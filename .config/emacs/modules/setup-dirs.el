@@ -9,13 +9,15 @@
 
 (use-package dired
   :straight nil
-  :custom
-  ((dired-listing-switches "-agho --group-directories-first")))
+  :config
+  (setq dired-use-ls-dires nil)
+  )
 
 (use-package dired-single
   :ensure t)
 
 (use-package dirvish
+  :straight t
   :init
   (dirvish-override-dired-mode)
   :custom
@@ -30,7 +32,7 @@
   (setq dirvish-use-header-line 'global)
   (setq delete-by-moving-to-trash t)
   (setq dired-listing-switches
-        "-l --almost-all --human-readable --group-directories-first --no-group")
+        "-al --group-directories-first")
   (setq dirvish-preview-dispatchers
         (cl-substitute 'pdf-preface 'pdf dirvish-preview-dispatchers))
 

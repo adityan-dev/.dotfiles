@@ -28,6 +28,7 @@
   :after lsp)
 
 (use-package dap-mode
+  :straight t
   :ensure t
   :custom
   (dap-auto-configure-mode t)

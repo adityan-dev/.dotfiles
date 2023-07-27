@@ -28,6 +28,7 @@
       )
 
 (use-package recentf
+  :straight t
   :config
   (setq recentf-save-file (concat user-cache-directory "recentf")
         recentf-max-saved-items 200
@@ -38,6 +39,7 @@
 (save-place-mode nil)
 
 (use-package undo-tree
+  :straight t
   :ensure t
   :init
   (setq undo-tree-auto-save-history nil)

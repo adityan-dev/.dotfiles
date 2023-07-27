@@ -30,6 +30,7 @@
   (ivy-mode 1))
 
 (use-package ivy-rich
+  :straight t
   :demand
   :init
   (ivy-rich-mode 1))

@@ -3,6 +3,7 @@
   :hook (minibuffer-setup .  cursor-intangible-mode))
 
 (use-package savehist
+  :straight t
   :defer 2
   :hook (after-init . savehist-mode)
   :config
