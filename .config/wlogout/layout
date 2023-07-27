@@ -1,0 +1,24 @@
+{
+    "label" : "reboot",
+    "action" : "reboot",
+    "text" : "Reboot",
+    "keybind" : "r"
+}
+{
+    "label" : "shutdown",
+    "action" : "poweroff",
+    "text" : "Shutdown",
+    "keybind" : "s"
+}
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit 0",
+    "text" : "Logout",
+    "keybind" : "e"
+}
+{
+    "label" : "suspend",
+    "action" : "suspend",
+    "text" : "Suspend",
+    "keybind" : "u"
+}

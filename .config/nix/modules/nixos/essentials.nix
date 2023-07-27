@@ -1,0 +1,37 @@
+{ config, pkgs, ... }:
+{
+  environment.systemPackages = with pkgs; [
+    git
+    wget
+    curl
+    ripgrep
+    busybox
+    zsh
+    starship
+    playerctl
+    brightnessctl
+    unzip
+    unrar
+    mtpfs
+    stow
+    home-manager
+    neovim
+    firefox-wayland
+    gparted
+    kitty
+    xfce.thunar
+    xfce.thunar-archive-plugin
+    swaynotificationcenter
+    neofetch
+    wofi
+    waybar 
+    wlogout
+    image-roll
+    feh
+    mpv
+    mpd
+    btop
+    gvfs
+    pamixer
+  ];
+}

@@ -1,0 +1,22 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+[package]
+disabled = true
+
+[nix_shell]
+disabled = true
+impure_msg = '[impure shell](bold red)'
+pure_msg = '[pure shell](bold green)'
+unknown_msg = '[unknown shell](bold yellow)'
+format = 'via [☃️ $state( \($name\))](bold blue) '
+
+[c]
+format = 'via [$name $version]($style)'
+
+[rust]
+format = 'via [⚙️ $version](red bold)'
+
+[sudo]
+style = 'bold green'
+symbol = '👩‍💻 '
+disabled = false
