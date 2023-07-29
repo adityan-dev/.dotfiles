@@ -11,5 +11,5 @@
   users.defaultUserShell = pkgs.zsh;
   # hardware.opentabletdriver.enable = true;
   # hardware.opentabletdriver.daemon.enable = true;
-  xserver.wacom.enable = true;
+  services.xserver.wacom.enable = true;
 }
