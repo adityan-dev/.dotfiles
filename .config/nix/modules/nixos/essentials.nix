@@ -61,6 +61,7 @@
     # Libs
     gcc
     cmake
+    gnumake
     gfortran
     #libllvm
     clang
