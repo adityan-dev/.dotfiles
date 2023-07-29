@@ -9,4 +9,5 @@
   environment.pathsToLink = [ "/share/zsh" ];
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+  hardware.opentabletdriver.enable = true;
 }
