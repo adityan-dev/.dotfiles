@@ -10,4 +10,5 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   hardware.opentabletdriver.enable = true;
+  hardware.opentabletdriver.daemon.enable = true;
 }
