@@ -9,6 +9,7 @@
   environment.pathsToLink = [ "/share/zsh" ];
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
-  hardware.opentabletdriver.enable = true;
-  hardware.opentabletdriver.daemon.enable = true;
+  # hardware.opentabletdriver.enable = true;
+  # hardware.opentabletdriver.daemon.enable = true;
+  xserver.wacom.enable = true;
 }
