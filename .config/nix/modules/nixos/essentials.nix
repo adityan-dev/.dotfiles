@@ -33,6 +33,8 @@
     home-manager
 
     # Files and Folders
+    zathura
+    unstable.rnote
     gvfs
     unison
     xfce.thunar
@@ -54,6 +56,7 @@
     rnix-lsp
     cmake-language-server
     ccls
+    rustfmt
 
     # Libs
     gcc
@@ -64,5 +67,6 @@
     libcxx
     rustc
     cargo
+    
   ];
 }
