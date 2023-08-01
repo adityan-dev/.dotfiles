@@ -34,7 +34,9 @@
 
     # Files and Folders
     zathura
-    unstable.rnote
+    # unstable.rnote
+    rnote
+    xournalpp
     gvfs
     unison
     xfce.thunar
