@@ -33,7 +33,8 @@
     home-manager
 
     # Files and Folders
-    zathura
+    # zathura
+    unstable.evince
     # unstable.rnote
     rnote
     xournalpp
