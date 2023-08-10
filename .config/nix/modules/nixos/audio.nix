@@ -2,6 +2,7 @@
 {
   sound.enable = true;
   security.rtkit.enable = true;
+  hardware.pulseaudio.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
