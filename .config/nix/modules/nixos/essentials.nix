@@ -26,6 +26,7 @@
     image-roll
     feh
     ffmpeg
+    flameshot
 
     # System Managers
     btop
