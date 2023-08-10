@@ -26,7 +26,7 @@
     image-roll
     feh
     ffmpeg
-    flameshot
+    gnome.gnome-screenshot
 
     # System Managers
     btop
