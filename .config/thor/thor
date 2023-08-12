@@ -1,0 +1,79 @@
+#!bash
+
+# catch first arguments with $1
+case "$1" in
+    install)
+	case "$2" in
+	    base)
+		sudo ./home/adi/.dotfiles/thor/scripts/install-system.sh
+  	    ;;
+  	    help)
+		echo "hermes"
+  		;;
+	esac
+	;;
+    build)
+	case "$2" in
+	    system)
+		./home/adi/.dotfiles/thor/scripts/build-system.sh
+  		;;
+  	    dotfiles)
+		cd /home/adi/.dotfiles && stow .
+  		;;
+  	    help)
+		echo "system"
+		echo "home"
+		echo "dotfiles"
+  		;;
+	esac
+	;;
+    sync)
+	case "$2" in
+	    dotfiles)
+		cd /home/adi/.dotfiles
+		git add .
+		git commit -m "thor-auto-commit"
+		git push origin archland
+  		;;
+  	    study)
+		case "$3" in
+	 	    in)
+			unison /media/data/Study/IITR-MSP/Courses/Semester-7 /home/adi/Study
+	  		;;
+  	 	    out)
+			unison /home/adi/Study /media/data/Study/IITR-MSP/Courses/Semester-7
+  	  		;;
+		esac
+  		;;
+  	    projects)
+		case "$3" in
+	 	    in)
+			unison /media/data/Study/Projects /home/adi/Projects
+	  		;;
+  	 	    out)
+			unison /home/adi/Projects /media/data/Study/Projects
+  	  		;;
+	        esac
+  		;;
+  	    music)
+		case "$3" in
+	 	 in)
+		     unison /media/data/Songs /home/adi/Music
+	  	     ;;
+  	 	 out)
+		     unison /home/adi/Music /media/data/Songs
+  	  	     ;;
+	        esac
+  		;;
+  	    help)
+	  echo "music"
+	  echo "projects"
+	  echo "dotfiles"
+  	  ;;
+	esac
+	;;
+    help)
+      echo "build"
+      echo "sync"
+      ;;
+esac

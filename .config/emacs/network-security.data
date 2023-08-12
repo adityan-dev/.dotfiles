@@ -1,0 +1,6 @@
+;;;; -*- mode: lisp-data -*-
+(
+ (:id "sha1:af1a8c7a1bb0eecff37812db2feac4df8a31bab5" :fingerprints ("sha1:43:8f:72:b8:ed:1e:5d:83:d1:10:28:fd:44:7f:43:6c:f5:fe:9e:2a") :host "raw.githubusercontent.com.x.3c65cbe4006340426809c5e04c1b7c000fe5.9270ed52.id.opendns.com:443" :conditions (:unknown-ca :invalid :verify-cert))
+ (:id "sha1:b5f02af98a78946940f5a0cd445901495c353b76" :fingerprints ("sha1:65:a2:47:83:01:cc:79:f1:cc:bb:57:93:98:02:0f:c5:59:fa:c4:a5") :host "raw.githubusercontent.com.x.0fa4f4e50838a042b90a85a02ff44b5ffdc3.9270ed44.id.opendns.com:443" :conditions (:unknown-ca :invalid :verify-cert))
+ (:id "sha1:5cce342a9a99ff6632dc081a41f5f4a28e8e10fc" :fingerprints ("sha1:46:54:5a:f8:88:ac:8c:da:85:91:36:6f:6a:15:69:84:a8:56:2d:c5") :host "raw.githubusercontent.com:443" :conditions (:unknown-ca :invalid :verify-cert))
+)
