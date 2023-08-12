@@ -26,7 +26,7 @@ case "$1" in
 	  cd /home/adi/.dotfiles
 	  git add .
 	  git commit -m "thor-auto-commit"
-	  git push origin master
+	  git push origin nixland
   	  ;;
   	  study)
 		case "$3" in
